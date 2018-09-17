@@ -5,6 +5,7 @@ sudo apt install -y chromium-browser
 cat <<EOF | sudo tee /etc/apt/sources.list.d/non-free.list
 deb http://www.deb-multimedia.org stretch main non-free
 EOF
+URL=http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/
 wget -q ${URL}/deb-multimedia-keyring_2016.8.1_all.deb
 sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb || \
   (sudo apt -f install -y && \
