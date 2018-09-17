@@ -39,3 +39,19 @@ curl https://storage.googleapis.com/gcm-ext/gcm_install.sh | bash -x
 #       type: [INSTANCE_TYPE]
 #     - name: [INSTANCE_NAME_2]
 #       host: [INSTANCE_IP_2]
+
+#Install VIM ,Git,Telnet
+sudo apt-get install vim vim-rt
+sudo apt-get install telnet
+sudo apt-get install telnetd
+sudo apt install git
+sudo apt-get install sudo
+sudo apt-get install openjdk-8-jdk
+export JAVA_HOME=’/usr/lib/jvm/jre-1.8.0-openjdk’
+export JRE_HOME=’/usr/lib/jvm/java-8-openjdk-amd64/jre’
+# Install jenkins user and add it to root
+
+sudo useradd jenkins -U -s /bin/bash
+sudo echo "jenkins123" | passwd --stdin jenkins
+sudo mkhomedir_helper jenkins
+usermod -aG sudo jenkins
