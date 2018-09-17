@@ -54,4 +54,5 @@ export JRE_HOME=’/usr/lib/jvm/java-8-openjdk-amd64/jre’
 sudo useradd jenkins -U -s /bin/bash
 sudo echo "jenkins123" | passwd --stdin jenkins
 sudo mkhomedir_helper jenkins
-usermod -aG sudo jenkins
+#usermod -aG sudo jenkins
+sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" /etc/sudoers
