@@ -1,4 +1,4 @@
-#Version: 1.0.0
+#Version: 1.0.0.0
 #Essential tools and utilities post install
 
 # 1.Install Chromium and Chromium flashplayer
