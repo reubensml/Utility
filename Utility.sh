@@ -51,8 +51,8 @@ export JAVA_HOME=’/usr/lib/jvm/jre-1.8.0-openjdk’
 export JRE_HOME=’/usr/lib/jvm/java-8-openjdk-amd64/jre’
 # Install jenkins user and add it to root
 
-sudo useradd jenkins -U -s /bin/bash
-sudo echo "jenkins123" | passwd --stdin jenkins
-sudo mkhomedir_helper jenkins
+# sudo useradd jenkins -U -s /bin/bash
+# sudo echo "jenkins123" | passwd --stdin jenkins
+# sudo mkhomedir_helper jenkins
 #usermod -aG sudo jenkins
-sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" /etc/sudoers
+# sudo echo "jenkins ALL=(ALL) NOPASSWD: ALL" /etc/sudoers
