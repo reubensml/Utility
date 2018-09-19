@@ -19,7 +19,7 @@ sudo apt install -y flashplayer-chromium
 
 curl https://storage.googleapis.com/gcm-ext/gcm_install.sh | bash -x
 
-#Additional Configuration required after Install.Checking SCM for github and jenkins integration
+#Additional Configuration required after Install.Checking SCM for github and jenkins integration.
 # In /etc/default/gcm following has to be setup depending on servers.
 # ---
 # config:
