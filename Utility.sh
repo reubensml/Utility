@@ -1,7 +1,7 @@
 #Version: 1.0.0.0
-#Essential tools and utilities post install
+#Essential tools and utilities post install.
 
-# 1.Install Chromium and Chromium flashplayer
+# 1.Install Chromium and Chromium flashplayer.
 sudo apt install -y chromium-browser
 cat <<EOF | sudo tee /etc/apt/sources.list.d/non-free.list
 deb http://www.deb-multimedia.org stretch main non-free
@@ -15,12 +15,12 @@ rm -f deb-multimedia-keyring_2016.8.1_all.deb
 sudo apt update -y
 sudo apt install -y flashplayer-chromium
 
-#Install SAP HANA monitoring agents for slackdriver monitoring in GCP
+#Install SAP HANA monitoring agents for slackdriver monitoring in GCP.
 
 curl https://storage.googleapis.com/gcm-ext/gcm_install.sh | bash -x
 
 #Additional Configuration required after Install.Checking SCM for github and jenkins integration
-# In /etc/default/gcm following has to be setup depending on servers
+# In /etc/default/gcm following has to be setup depending on servers.
 # ---
 # config:
 #   timestamps_in_output: no
